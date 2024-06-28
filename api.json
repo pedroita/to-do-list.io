@@ -2,11 +2,11 @@
     "tarefas":[
         {
             "titulo": "tarefa1",
-            "descrição": "Lavar roupa"
+            "descricao": "Lavar roupa"
         },
         {
             "titulo": "tarefa2",
-            "responsavel": "Fazer almoço"
+            "descricao": "Fazer almoço"
         }
 
     ]
