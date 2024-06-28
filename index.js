@@ -3,7 +3,7 @@ const overlay = document.getElementById('overlay'); // ou outra forma de selecio
 const criarTarefa = document.getElementById('criarTarefa'); // ou outra forma de selecionar o elemento
 const lista = document.getElementById('lista'); // ou outra forma de selecionar o elemento
 
-function novaTarefa(){
+function abrirModal(){
     overlay.classList.add("active");
     criarTarefa.classList.add("active");
 }
@@ -39,4 +39,25 @@ function inserirTarefa(listaDeTarefas){
             `;
         });
     }
+}
+
+
+function novaTarefa(){
+    event.preventDefault();
+    let tarefa ={
+        titulo: titulo.value,
+        descricao: descricao.value
+    };
+    fetch("http://localhost:3000/tarefas",{
+        method:"POST",
+        headers:{
+            "Content-type": "application/json"
+        },
+        body:JSON.stringify(tarefa)
+    })
+    .then(res => res.json())
+    .then(res => {
+    buscarTarefa();
+    })
+    fecharModal();
 }

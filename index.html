@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>TO DO List</title>
 </head>
 <body>
     <header>
@@ -12,46 +12,20 @@
     </header>
     <main>
         <section id="tarefas">
-            <h2>Tarefas <button onclick="novaTarefa()">nova tarefa</button></h2>
+            <h2>Tarefas <button onclick="abrirModal()">nova tarefa</button></h2>
             <!-- <h6>Nenhum tarefa registrada</h6> -->
             <ul id="lista">
-                <li>
-                    <h5>Titulo da tarefa</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam, consequatur neque quo labore debitis quisquam accusantium eveniet veniam optio maiores ut quos nisi culpa voluptas quae eos consequuntur voluptatibus.</p>
-                    <div class="action">
-                        <box-icon name='trash' type='solid' size="sm"></box-icon>
-                    </div>
-                </li>
-                <li>
-                    <h5>Titulo da tarefa</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam, consequatur neque quo labore debitis quisquam accusantium eveniet veniam optio maiores ut quos nisi culpa voluptas quae eos consequuntur voluptatibus.</p>
-                </li>
-                <li>
-                    <h5>Titulo da tarefa</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam, consequatur neque quo labore debitis quisquam accusantium eveniet veniam optio maiores ut quos nisi culpa voluptas quae eos consequuntur voluptatibus.</p>
-                </li>
-                <li>
-                    <h5>Titulo da tarefa</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam, consequatur neque quo labore debitis quisquam accusantium eveniet veniam optio maiores ut quos nisi culpa voluptas quae eos consequuntur voluptatibus.</p>
-                </li>
-                <li>
-                    <h5>Titulo da tarefa</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam, consequatur neque quo labore debitis quisquam accusantium eveniet veniam optio maiores ut quos nisi culpa voluptas quae eos consequuntur voluptatibus.</p>
-                </li>
-                <li>
-                    <h5>Titulo da tarefa</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam, consequatur neque quo labore debitis quisquam accusantium eveniet veniam optio maiores ut quos nisi culpa voluptas quae eos consequuntur voluptatibus.</p>
-                </li>
+                
             </ul>
         </section>
         <section id="overlay" onclick="fecharModal()"></section>
         <div id = "criarTarefa" class="modal">
-            <form action="">
+            <form onsubmit="novaTarefa()">
                 <h3>Criar tarefa <box-icon name='x' size="md" onclick="fecharModal()"></box-icon></h3>
                 <label for="Titulo">Titulo</label>
-                <input type="text" id="titulo">
+                <input type="text" id="titulo" required>
                 <label for="descricao">Descrição</label>
-                <textarea name="" id="descricao"></textarea>
+                <textarea name="" id="descricao" required></textarea>
                 <button>Criar</button>
             </form>
         </div>
