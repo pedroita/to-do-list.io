@@ -2,28 +2,18 @@
   "tarefas": [
     {
       "titulo": "Tarefa 1",
-      "descricao": "fazer almoço para 4 pessoas ",
+      "descricao": "Fazer almoço\nArrumar casa\nLavar carro",
       "id": 1
     },
     {
       "titulo": "Tarefa 2",
-      "descricao": "Lavar o carro",
+      "descricao": "Viajar",
       "id": 2
     },
     {
-      "titulo": "tarefa 3",
-      "descricao": "lavar quintal",
+      "titulo": "Tarefa 3",
+      "descricao": "Arrumar casa",
       "id": 3
-    },
-    {
-      "titulo": "tarefa 4",
-      "descricao": "lavar louça",
-      "id": 4
-    },
-    {
-      "titulo": "sdada",
-      "descricao": "sada",
-      "id": 5
     }
   ]
 }
